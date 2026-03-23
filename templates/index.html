@@ -17,8 +17,8 @@
             <a href="#home">Home</a>
             <a href="#albums">Albums</a>
             <a href="#others">Ohters</a>
-            <a href="#">Favorite Songs</a>
-            <a href="#">Message Board</a>
+            <a href="#favorite songs">Favorite Songs</a>
+            <a href="#message board">Message Board</a>
         </nav>
     </div>
 </header>
@@ -39,7 +39,6 @@
         持续刷新日本音乐人全球影响力纪录。
     </p>
     <h1>Posted By Ado</h1>
-    <button class="btn"></button>
 </section>
 
 <!-- 专辑区域 -->
@@ -80,14 +79,103 @@
     </div>
 </section>
 <!--Favorite Songs-->
+<section id="favorite songs" class="song-section">
+    <div class="glass-player-card">
+        <div class="player-left">
+            <div class="album-cover-wrapper">
+                <img src="/static/images/uta.jpg" alt="New Genesis Cover">
+            </div>
+            <div class="song-meta">
+                <h3 class="song-name">新時代</h3>
+                <p class="artist-name">Uta - ONE PIECE FILM RED</p>
+                <div class="play-status"><span class="play-icon">▶</span> Play </div>
+            </div>
+        </div>
+        <div class="player-right">
+            <div class="lyrics-scroll-container">
+                <p class="lyric-line active">新時代を創るのは僕らだ</p>
+                <p class="lyric-line">恐れるものなどないさ</p>
+                <p class="lyric-line">声を上げろ、歌え、叫べ</p>
+                <p class="lyric-line">世界を変えるのは音楽だ</p>
+                <p class="lyric-line">闇を切り裂く光のように</p>
+                <p class="lyric-line">君の心に届けるよ</p>
+                <p class="lyric-line">信じる力を信じて</p>
+                <p class="lyric-line">一緒に歩んでいこう</p>
+                <p class="lyric-line">WoW... 新時代</p>
+                <p class="lyric-line">WoW... 歌え</p>
+                <p class="lyric-line">過去の傷を抱えたままでも</p>
+                <p class="lyric-line">前を向いて進めるさ</p>
+                <p class="lyric-line">涙は強さに変わるから</p>
+                <p class="lyric-line"></p>
+                <p class="lyric-line"></p>
+                <p class="lyric-line"></p>
+            </div>
+        </div>
+    </div>
 
-
+    <div class="glass-player-card">
+        <div class="player-left">
+            <div class="album-cover-wrapper">
+                <img src="/static/images/akuruhi.jpg" alt="Eien no Akuruhi Cover">
+            </div>
+            <div class="song-meta">
+                <h3 class="song-name">永遠のあくる日</h3>
+                <p class="artist-name">Ado - 永远的翌日</p>
+                <div class="play-status"><span class="play-icon">▶</span> Play </div>
+            </div>
+        </div>
+        <div class="player-right">
+            <div class="lyrics-scroll-container">
+                <p class="lyric-line active">永遠の翌日を探して</p>
+                <p class="lyric-line">僕らは旅を続ける</p>
+                <p class="lyric-line">涙が乾くその日まで</p>
+                <p class="lyric-line">歌い続けよう</p>
+                <p class="lyric-line">失ったものばかりじゃない</p>
+                <p class="lyric-line">得たものもあるはずさ</p>
+                <p class="lyric-line">君がくれた優しさを</p>
+                <p class="lyric-line">忘れないように</p>
+                <p class="lyric-line">風が運ぶ思い出たち</p>
+                <p class="lyric-line">優しく包み込むよ</p>
+                <p class="lyric-line">痛みもいつか癒えるさ</p>
+                <p class="lyric-line">信じているから</p>
+                <p class="lyric-line"></p>
+                <p class="lyric-line"></p>
+                <p class="lyric-line"></p>
+                <p class="lyric-line"></p>
+            </div>
+        </div>
+    </div>
+</section>
 <!--Message Board-->
+<section id="message board" class="blog-section">
+    <h2 class="section-title">Message Board</h2>
 
+    <div class="message-form-container">
+        <form action="/messages/create" method="POST" class="glass-form">
+            <textarea name="content" placeholder="在这里留下你想对 Ado 说的话..." required></textarea>
+            <div class="form-footer">
+                <span class="char-count">0 / 200</span>
+                <button type="submit" class="submit-btn">发布留言</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="message-grid">
+        <div class="message-card">
+            <div class="message-header">
+                <span class="user-name">Ado_Fan_01</span>
+                <span class="message-date">2026-03-23</span>
+            </div>
+            <p class="message-content">这首《永遠のあくる日》真的太治愈了，循环了一整天！💙</p>
+            <div class="message-footer">
+                <span class="like-btn">💙 12</span>
+            </div>
+        </div>
+        </div>
+</section>
 <!-- 底部 -->
 <footer>
     <p>© 2026 Ado Fan Blog</p>
 </footer>
-
 </body>
 </html>
